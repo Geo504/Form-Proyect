@@ -34,36 +34,36 @@
 
           <div class="col-md-4">
             <label for="inputCardNumber" class="form-label">Card #</label>
-            <input type="number" class="form-control" id="inputCardNumber" placeholder="xxxxxxxxxxxx" required>
+            <input type="number" class="form-control" id="inputCardNumber" placeholder="xxxxxxxxxxxx" name="cardNumber" pattern="[0-9]{10}" required>
           </div>
           <div class="col-sm-6 col-md-4 ">
             <label for="inputCVC" class="form-label">CVC #</label>
-            <input type="number" class="form-control" id="inputCVC" placeholder="0000" required>
+            <input type="number" class="form-control" id="inputCVC" placeholder="0000" name="cvc" pattern="{4}" required>
           </div>
           <div class="col-sm-6 col-md-4 ">
             <label for="inputAmount" class="form-label">Amount</label>
             <div class="input-group">
               <span class="input-group-text">$</span>
-              <input type="number" class="form-control" id="inputAmount" placeholder="Amount" required>
+              <input type="number" class="form-control" id="inputAmount" name="amount" placeholder="Amount" required>
             </div>
           </div>
 
           <div class="col-sm-6">
             <label for="inputFirstName" class="form-label">First Name</label>
-            <input type="text" class="form-control" id="inputFirstName" required>
+            <input type="text" class="form-control" id="inputFirstName" name="firstName" pattern="[A-Za-z]{1,}" required>
           </div>
           <div class="col-sm-6">
             <label for="inputLastName" class="form-label">Last Name</label>
-            <input type="text" class="form-control" id="inputLastName" required>
+            <input type="text" class="form-control" id="inputLastName" name="lastName" pattern="[A-Za-z]{1,}" required>
           </div>
 
           <div class="col-md-6">
             <label for="inputCity" class="form-label">City</label>
-            <input type="text" class="form-control" id="inputCity" placeholder="Washington D. C." required>
+            <input type="text" class="form-control" id="inputCity" name="city" pattern="[A-Za-z]{1,}" placeholder="Washington D. C." required>
           </div>
           <div class="col-md-3">
             <label for="inputState" class="form-label">State</label>
-            <select id="inputState" class="form-select">
+            <select id="inputState" class="form-select" name="state">
               <option selected>Pick a state</option>
               <option>California</option>
               <option>New York</option>
@@ -72,7 +72,7 @@
           </div>
           <div class="col-md-3">
             <label for="inputPostalCode" class="form-label">Postal Code</label>
-            <input type="number" class="form-control" id="inputPostalCode" required>
+            <input type="text" class="form-control" id="inputPostalCode" name="postalCode" pattern="[0-9]{5}" required>
           </div>
 
           <div class="col-md-6">
